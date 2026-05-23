@@ -213,6 +213,58 @@
             </div>
         </div>
 
+         <!-- COLLECTIBLES SECTION -->
+        <div class="section">
+            <h2>Special Board Pegs</h2>
+            <p style="font-size: 1rem; color: #e0d0f0; line-height: 1.5;">
+                When the session locks, <span class="highlight-text">4 unique glowing pegs</span> spawn dynamically across the middle rows of the board. Physically pass your ball through one first to steal its effect and weaponize it against other chatters using the active target commands below!
+            </p>
+            
+            <div class="peg-grid">
+                <!-- STEAL GOLD -->
+                <div class="peg-card peg-gold">
+                    <div class="peg-node">💰</div>
+                    <div class="peg-info">
+                        <h3>!steal <span style="font-size:0.85rem; font-family:monospace; color:#fff;">[username]</span></h3>
+                        <p>Steals <strong>25%</strong> of your targeted opponent's point pool and adds it straight to yours.</p>
+                    </div>
+                </div>
+                <!-- MAGNET -->
+                <div class="peg-card peg-cyan">
+                    <div class="peg-node">🧲</div>
+                    <div class="peg-info">
+                        <h3>!magnet <span style="font-size:0.85rem; font-family:monospace; color:#fff;">[username]</span></h3>
+                        <p>Forces the target's next dropped ball to pull magnetically toward the closest death zone.</p>
+                    </div>
+                </div>
+                <!-- SHRINK -->
+                <div class="peg-card peg-purple">
+                    <div class="peg-node">🔻</div>
+                    <div class="peg-info">
+                        <h3>!shrink <span style="font-size:0.85rem; font-family:monospace; color:#fff;">[username]</span></h3>
+                        <p>Shrinks the target's next dropped ball down to a tiny <strong>45%</strong> of its regular scaling size.</p>
+                    </div>
+                </div>
+                <!-- GRAVITY -->
+                <div class="peg-card peg-orange">
+                    <div class="peg-node">⬇️</div>
+                    <div class="peg-info">
+                        <h3>!gravity <span style="font-size:0.85rem; font-family:monospace; color:#fff;">[username]</span></h3>
+                        <p>Alters environment mass causing the target's next ball to plummet <strong>2.2× faster</strong> down the board.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="font-size: 1.1rem; color: var(--neon-pink); margin: 1.5rem 0 0.75rem 0; text-transform: uppercase; letter-spacing: 1px;">Collectible Rules:</h3>
+            <ul class="rules-list" style="font-size: 0.95rem;">
+                <li><strong>One at a Time:</strong> Players can hold a maximum of 1 collectible. If you catch another one while already carrying an item, your previous item is destroyed.</li>
+                <li><strong>Retention:</strong> Items carry over safely between drops until you fire them off. Holding status shows up as a status badge right inside the stream leaderboard.</li>
+                <li><strong>Respawn Rates:</strong> Once an item peg is struck and claimed, it will vanish and respawn on a completely fresh, randomized coordinate row after 20 seconds.</li>
+                <li><strong>Execution:</strong> Target attacks trigger instantly on the victim's immediate next <span style="font-family: monospace; color: var(--neon-pink);">!drop</span>.</li>
+            </ul>
+        </div>
+
+
         <!-- POWER-UPS -->
         <div class="section">
             <h2>Power-Ups</h2>
