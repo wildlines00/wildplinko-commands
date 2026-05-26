@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plinko Chat Commands</title>
+    <title>Wild Plinko Chat Commands</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oooh+Baby&family=Sacramento&display=swap" rel="stylesheet">
@@ -280,7 +280,6 @@
             <div class="subtitle">Chat Commands</div>
         </header>
 
-        <!-- JOINING & PLAYING -->
         <div class="section">
             <h2>Joining & Playing</h2>
             <div class="grid">
@@ -295,7 +294,6 @@
             </div>
         </div>
 
-        <!-- LOCKING IN -->
         <div class="section">
             <h2>Locking In</h2>
             <div class="grid">
@@ -310,44 +308,39 @@
             </div>
         </div>
 
-         <!-- COLLECTIBLES SECTION -->
         <div class="section">
-            <h2>Special Board Pegs</h2>
+            <h2>Collectibles (Hit glowing pegs)</h2>
             <p style="font-size: 1rem; color: #e0d0f0; line-height: 1.5;">
                 When the session locks, <span class="highlight-text">4 unique glowing pegs</span> spawn dynamically across the middle rows of the board. Physically pass your ball through one first to steal its effect and weaponize it against other chatters using the active target commands below!
             </p>
             
             <div class="peg-grid">
-                <!-- STEAL GOLD -->
                 <div class="peg-card peg-gold">
                     <div class="peg-node">💰</div>
                     <div class="peg-info">
                         <h3>!steal <span style="font-size:0.85rem; font-family:monospace; color:#fff;">[username]</span></h3>
-                        <p>Steals <strong>25%</strong> of your targeted opponent's point pool and adds it straight to yours.</p>
+                        <p>Takes <strong>50%</strong> of target's points and adds them to yours.</p>
                     </div>
                 </div>
-                <!-- MAGNET -->
                 <div class="peg-card peg-cyan">
-                    <div class="peg-node">🧲</div>
+                    <div class="peg-node">🟢</div>
                     <div class="peg-info">
-                        <h3>!magnet <span style="font-size:0.85rem; font-family:monospace; color:#fff;">[username]</span></h3>
-                        <p>Adds a magnetic pull toward the closest death zone.</p>
+                        <h3>!giant <span style="font-size:0.85rem; font-family:monospace; color:#fff;">[username]</span></h3>
+                        <p>Makes target's next ball huge (barely fits through pegs)!</p>
                     </div>
                 </div>
-                <!-- SHRINK -->
                 <div class="peg-card peg-purple">
                     <div class="peg-node">🔻</div>
                     <div class="peg-info">
                         <h3>!shrink <span style="font-size:0.85rem; font-family:monospace; color:#fff;">[username]</span></h3>
-                        <p>Shrinks the target's next dropped ball <strong>45%</strong> of its regular scaling size.</p>
+                        <p>Makes target's next ball tiny!</p>
                     </div>
                 </div>
-                <!-- GRAVITY -->
                 <div class="peg-card peg-orange">
                     <div class="peg-node">⬇️</div>
                     <div class="peg-info">
                         <h3>!gravity <span style="font-size:0.85rem; font-family:monospace; color:#fff;">[username]</span></h3>
-                        <p>Increases the weight of victims ball <strong>2.2× faster</strong> down the board.</p>
+                        <p>Makes target's next ball fall <strong>2× faster</strong> down the board.</p>
                     </div>
                 </div>
             </div>
@@ -355,21 +348,19 @@
             <h3 style="font-size: 1.1rem; color: var(--neon-pink); margin: 1.5rem 0 0.75rem 0; text-transform: uppercase; letter-spacing: 1px;">Collectible Rules:</h3>
             <ul class="rules-list" style="font-size: 0.95rem;">
                 <li><strong>Retention:</strong> Items carry over safely between drops until you use them. Holding status shows up as a status badge right inside the leaderboard.</li>
-                <li><strong>Respawn Rates:</strong> Once an item peg is struck and claimed, it will vanish and respawn on a completely fresh, peg after 20 seconds.</li>
+                <li><strong>Respawn Rates:</strong> Once an item peg is struck and claimed, it will vanish and respawn on a completely fresh peg after 20 seconds.</li>
                 <li><strong>Execution:</strong> Target attacks trigger instantly on the victim's immediate next <span style="font-family: monospace; color: var(--neon-pink);">!drop</span>.</li>
             </ul>
         </div>
 
-
-        <!-- POWER-UPS -->
         <div class="section">
-            <h2>Power-Ups</h2>
-            <p style="font-size: 0.9rem; color: #a48cb3; margin-bottom: 1.5rem; italic: true;">*Must be purchased before dropping, unless specified otherwise.</p>
+            <h2>Shop Power-Ups</h2>
+            <p style="font-size: 0.9rem; color: #a48cb3; margin-bottom: 1.5rem; font-style: italic;">*Must be purchased before dropping, unless specified otherwise.</p>
             <div class="grid">
                 <div class="command-card">
                     <div class="command-trigger">!buyjump</div>
                     <div class="command-cost">20 pts</div>
-                    <div class="command-desc">Purchases the Jumper utility. (Activate mid-air using !jump)</div>
+                    <div class="command-desc">Buy a mid-air jump, activate with !jump while ball is falling.</div>
                 </div>
                 <div class="command-card">
                     <div class="command-trigger">!jump</div>
@@ -379,27 +370,26 @@
                 <div class="command-card">
                     <div class="command-trigger">!bounce</div>
                     <div class="command-cost">100 pts</div>
-                    <div class="command-desc">Increases your ball's bounce intensity on the pegs.</div>
+                    <div class="command-desc">Increases ball bounce energy on pegs.</div>
                 </div>
                 <div class="command-card">
                     <div class="command-trigger">!doubleball</div>
                     <div class="command-cost">150 pts</div>
-                    <div class="command-desc">Drops two balls simultaneously instead of one.</div>
+                    <div class="command-desc">Drops two balls simultaneously!</div>
                 </div>
                 <div class="command-card">
                     <div class="command-trigger">!nodeath</div>
                     <div class="command-cost">350 pts</div>
-                    <div class="command-desc">Replaces the 2 outermost death zones with 25× multipliers.</div>
+                    <div class="command-desc">Replaces the 2 outer death zones with 25× for your drop!</div>
                 </div>
                 <div class="command-card">
                     <div class="command-trigger">!chaos</div>
                     <div class="command-cost">500 pts</div>
-                    <div class="command-desc">Randomizes all bucket values for 30 seconds. <span style="color: var(--neon-pink);">Affects every player on the board!</span></div>
+                    <div class="command-desc">Randomises all bucket values every 5 seconds for 30 seconds. <span style="color: var(--neon-pink);">Affects every player on the board!</span></div>
                 </div>
             </div>
         </div>
 
-        <!-- RULES -->
         <div class="section">
             <h2>The Rules</h2>
             <ul class="rules-list">
